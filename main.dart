@@ -1,5 +1,4 @@
 //part 1
-
 class BusCard {
   String _owner = '';
   int _balance = 0;
@@ -55,8 +54,8 @@ class BusCard {
   }
 }
 
-//part 2
 
+// part 2
 class StudentCard extends BusCard {
   int _discount = 0;
 
@@ -88,16 +87,16 @@ void main() {
   // Starting balance = 1080 RWF, Bus fare = 208 RWF, Discount = 18%
 
   // EXAMPLE (done for you): create a card and test the setter
-  BusCard card = BusCard('Reem', 1080);
+  BusCard card = BusCard('Miada', 1080);
   card.owner = 'Al'; // refused: name too short
   card.showInfo();
 
   // TODO 5
-  card.owner = 'Reem Abdelmonim Hassan Obeid';
+  card.owner = 'Miada Abdelmonim Hassan Obid';
   card.showInfo();
 
   // TODO 6
-  card.topUp(100);
+  card.topUp(100); // refused
   card.topUp(2000);
 
   // TODO 7
@@ -106,7 +105,7 @@ void main() {
   card.showInfo();
 
   // TODO 8
-  StudentCard student = StudentCard('Reem Abdelmonim Hassan Obeid', 1080, 18);
+  StudentCard student = StudentCard('Miada Abdelmonim Hassan Obid', 1080, 18);
 
   // TODO 9
   student.pay(208);

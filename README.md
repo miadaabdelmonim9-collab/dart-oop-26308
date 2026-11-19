@@ -10,7 +10,18 @@
 - Student discount = 18%
 
 ## Output of main.dart
-(paste here)
+Error: name too short
+Owner: Miada | Balance: 1080 RWF
+Owner: Miada Abdelmonim Hassan Obid | Balance: 1080 RWF
+Error: top-up must be 500 to 50000 RWF
+Topped up 2000 RWF
+Paid 208 RWF
+Paid 208 RWF
+Owner: Miada Abdelmonim Hassan Obid | Balance: 2664 RWF
+Student discount: 37 RWF
+Paid 171 RWF
+Owner: Miada Abdelmonim Hassan Obid | Balance: 909 RWF
+Student card: 18% off
 
 ## Part 1: There is no setter for balance . Why is that a good idea for a bus card?
 If balance had a setter, anyone could write card.balance = 1000000 and give themselves free money. Without a setter, the balance can only change through topUp and pay, and those two methods check the rules first (top-up must be 500 to 50000 RWF, and you cannot pay more than the balance). This keeps the money safe.
