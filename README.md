@@ -42,3 +42,13 @@ Student card: 18% off
 | 4 | p.battery = 100; | Phone has a getter but no setter, so the battery cannot be changed. | Add set battery(int value) that accepts only 0 to 100 |
 | 5 | print(p.battery()); | battery is a getter, not a method, so it must not have (). | print(p.battery); |
 | Not a bug | Phone p = new Phone('Tecno', 50); | new is optional in Dart but still allowed, so the line works. | (none) |
+
+## Part 5 :My prediction:
+It prints 1 and then 5.
+For Bag a: add() makes items 1, then a.items = -5 is refused by the setter because it only accepts values 0 or more, so it prints 1.
+For BigBag b: each add() calls super.add() twice, so it adds 2 each time. Two calls make 4. Then b.items = b.items + 1 makes it 5, so it prints 5.
+Real output:
+1
+5
+Was I right?
+Yes, I was right.
